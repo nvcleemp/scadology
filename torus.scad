@@ -18,3 +18,8 @@ module torus_through_point(center, p, normal_rotation, thickness, $fa=30, $fs=0.
     y = -x*(center[0]-p[0])/(center[1]-p[1]);
     torus(center, [x,y,z], radius, thickness, $fa, $fs, $fn1, $fn2);
 }
+
+//============ Usage ============//
+
+torus([0, 0, 0], [0, 0, 1], 10, 1);
+torus([10, 0, 0], [0, 1, 0], 10, 1);
