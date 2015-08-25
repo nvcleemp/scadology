@@ -1,3 +1,5 @@
+use <geometry.scad>
+
 module basic_torus(radius, thickness, $fa=30, $fs=0.5, $fn1=36, $fn2=12){
     rotate_extrude(convexity = 10, $fn = $fn1)
     translate([radius, 0, 0])
